@@ -13,6 +13,8 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/init.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 	<style>
    @font-face {
     font-family: Bebas; /* Гарнитура шрифта */
@@ -25,6 +27,12 @@
    </style>
 </head>
 <body class="teal lighten-2">
-<div class="pere white-text center">Aromoz</div></br>
+<div class="bar pere white-text center">Aromoz</div></br>
+
+   <!-- make reveal calls last -->
+    <script>
+      window.sr = ScrollReveal();
+sr.reveal('.bar', { duration: 10000 },10000);
+    </script>
 </body>
   </html>
